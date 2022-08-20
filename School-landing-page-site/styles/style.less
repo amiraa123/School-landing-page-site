@@ -1,0 +1,480 @@
+
+@yellow:#fec913;
+@black: rgb(45, 44, 44);
+@white :white;
+@blue:#082465;
+@poppins: 'Poppins'; 
+body {
+    font-size: 16px;
+    @media screen and (max-width:768px) {
+        font-size: 10px;
+    }
+    @media screen and (min-width:769px)  and (max-width:1200px) {
+        font-size: 14px;
+    }
+}
+
+
+
+  
+.titre{
+    font-size: 2.5rem;
+    font-family:@poppins;
+    color: @blue;
+    font-weight: bolder;
+    line-height: 0.9;
+    text-align: center;
+}
+.paragraphe{
+    font-size: 1rem;
+    font-family: @poppins;
+    color: rgb(72, 73, 74);
+    line-height: 1.671;
+    text-align: center;
+}
+.bouton{
+    background-color: @yellow; 
+    border-radius: 12px;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border: none;
+  height: 50px;
+}
+
+  
+
+body{
+    background-image :url("../images/bg.png")  ;
+    background-size: cover;
+}
+.nav-item{
+    text-align: center;
+}
+#navbar{
+    .navbar-brand{
+        font-size: 1.5rem;
+        font-family: @poppins;
+        // color:@white;
+        font-weight: bold;
+        line-height: 3.216;
+        text-align: left;
+        justify-content: space-between;
+        }
+    
+    .teacher{
+        color: @yellow;
+
+        }
+        .navbar-nav{
+
+                font-size:1.063rem;
+                font-family: @poppins;
+                color: @black;
+                text-transform: uppercase;
+                line-height: 4.729;
+                text-align: left;
+            
+        }
+
+        display: flex;
+        flex-direction: row;
+        
+}
+.boy{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#second {
+    h2   {
+        font-size: 2.7rem;
+        font-family: @poppins;
+       //  color: @white;
+        line-height: 0.994;
+        text-align: left;
+        }
+    h1  {
+            color: @yellow;
+            font-size: 3.3rem;
+            font-family: @poppins;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 0.98;
+            text-align: left;
+          
+        }
+    
+    a{
+      .bouton;
+    }
+    p{
+        font-size: 1rem;
+        font-family: @poppins;
+        // color: @white;
+        line-height: 1.5;
+        text-align: left;
+      }
+        display: flex;
+        flex-direction: row;
+}
+@media screen and (max-width : 576px){
+    .navbar-brand{
+        font-size:0.5rem ;
+     }
+    .boy{
+       display: none;
+    }
+   #second{
+    margin-top: 40px;
+    h2{
+
+        font-size: 1.5rem;
+    }
+    h1{
+        font-size: 3rem ;
+    }
+ 
+} 
+#section_one{
+    h2{
+            font-size: 2.5rem;
+          
+    }
+    p {
+        font-size: 1rem;
+      }
+      .kids{
+        width:300px ;
+        height: 200px ;
+    }
+
+}
+}
+
+@media screen and (max-width : 767px)and (min-width:576px ){
+   
+    .boy{
+        width: 400px;
+        height: 280px; 
+     }
+    #second{
+        margin-top: 20px;
+        h2{
+        font-size:2rem ;
+             }
+        h1{
+        font-size:4rem ;
+            }
+  
+        }  
+        #section_one{
+            h2{
+                    font-size: 2.5rem;
+                  
+            }
+            p {
+                font-size: 1rem;
+              }
+            .kids{
+                width: 500px;
+                height: 300px;
+            }
+
+       
+        }
+}
+@media screen and (max-width : 992px)and (min-width:768px ){
+    .boy{
+     width: 400px;
+       height: 280px; 
+
+    }
+    .kids{
+        width:650px;
+        height: 320px;
+    }
+}
+
+
+#section_one{
+    h2{
+         .titre;
+    }
+    p {
+       .paragraphe;
+      }
+
+      a{
+        .bouton;
+            
+    }
+   
+
+}
+
+#section_two{
+    h2{
+        .titre;
+    }
+    p{
+        .paragraphe;
+    }
+    h3{
+            font-size: 25px;
+            font-family: @poppins;
+            color: rgb(72, 73, 74);
+            line-height: 1.136;
+            text-align: center;
+          
+    }
+    a{
+        .bouton;
+    }
+}
+.cards{
+   
+        display : flex;
+        justify-content: center;
+        max-width: 100%;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+}
+
+
+#section_three{
+    h2{
+        .titre;
+    }
+    p{
+        .paragraphe;
+    }
+}
+
+
+
+#section_four{
+    h3{
+        font-size: 2rem;
+        font-family:@poppins;
+        color: @blue;
+        font-weight: bolder;
+        line-height: 1;
+      
+    }
+    h2{
+        .titre;
+    }
+    .textcenter{
+        .paragraphe;
+    }
+}
+
+.custom-card{
+    transition: all ease .5s;
+    padding: 10px;
+    border-radius: 10px;
+    background: white;
+    transform: scale(1.1);
+    box-shadow: -1px 3px 10px 0px ; 
+   
+
+    p{
+    font-size: 1rem;
+    font-family: @poppins;
+    color: rgb(72, 73, 74);
+    line-height: 1.671;
+    }
+  }
+
+
+.feed{
+       
+    display : flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+#section_five{
+    h2{
+        .titre;
+    }
+    p{
+        .paragraphe;
+    }
+    a{
+        background-color: @yellow; 
+        border-radius: 12px;
+        padding: 10px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem;
+        border: none;
+      height: 45px;
+    }
+
+    .form-control{
+        border: 0;
+    box-shadow: none;
+       background-color: #dedee0;
+        }
+        input::placeholder {
+            font-size: 17px;
+            font-family: @poppins;
+            color: rgb(253, 253, 254);
+            line-height: 1.788;
+          
+        }
+        textarea::placeholder{
+            font-size: 17px;
+            font-family: @poppins;
+            color: rgb(253, 253, 254);
+            line-height: 1.788;
+            top: 20px;
+        }  
+}
+
+
+
+#map {
+    height: 400px;
+  }
+
+.apply{
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;;
+}
+#section_six{
+    position: relative;
+
+    #jaune{
+    background-color: @yellow; 
+    border: none;
+    border-radius: 12px;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8rem;
+    height: 50px;
+    }
+    h3 {
+        font-size: 20px;
+        font-family: @poppins;
+        color: rgb(254, 254, 255);
+        line-height: 2.68;
+       
+      }
+      
+}
+.cadre{
+    background-color: @blue;
+    color: white;
+    text-align: justify;
+    border-radius: 0px 30px 30px 0px;
+    width: auto;
+}
+.kid{
+    height: 100%
+}
+
+#footer{
+    h2{
+        .titre;
+    }
+    .para{
+        .paragraphe;
+    }
+    h3{
+        font-size: 2.5rem;
+        font-family:@poppins;
+        color: @yellow;
+        font-weight: bolder;
+        line-height: 0.9;
+        text-align: center;
+    }
+    .footer{
+        background-color: @blue;
+        width: 100%;
+        color: white;
+        font-size: 1rem;
+        font-family: @poppins;
+        line-height: 1.671;
+        text-align: center;
+        height: 50px;
+    }
+}
+.arrow {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background: @blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// .header {
+//     position: relative;
+//     &::before {
+//         content: "";
+//         position: absolute;
+//         left: 0;
+//         background: url(../images/Ellipse1.png);
+//         height: 100%;
+//         width: 830px;
+//         background-repeat: no-repeat;
+//         background-size: contain;
+//         z-index: -1;
+//     }
+    
+// }
+
+#section_four{
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        background: url(../images/Ellipse2.png);
+        height: 100%;
+        width:150px;
+        background-repeat: no-repeat;
+        background-size: contain;
+     
+    }
+}
+
+
+#section_five{
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top:0;
+        margin: auto;
+        z-index: -1;
+        background: url(../images/Ellipse3.png);
+        height: 250px;
+        width:150px;
+        background-repeat: no-repeat;
+        background-size: contain;
+     
+    }
+}
+
+
+@media screen and (max-width : 576px){
+    .scrol{
+       height: 200px;
+        overflow-y: scroll;
+     }}
